@@ -1,0 +1,13 @@
+<p>Fetched: <a href={{model.url}}>{{model.url}}</a></p>
+
+<p>Name: {{model.name}}</p>
+
+<p>Images:</p>
+
+<ul>
+
+	{{#each image in model.images}}
+		<img src={{image}} alt={{model.title}} width="300" />
+	{{/each}}
+
+</ul>
