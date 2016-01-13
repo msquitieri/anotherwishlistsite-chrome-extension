@@ -1,13 +1,15 @@
-<p>Fetched: <a href={{model.url}}>{{model.url}}</a></p>
+<div class="product-container container">
+  <h4>{{model.name}}</h4>
+  <p>Price: {{bs-input value=model.price}}</p>
 
-<p>Name: {{model.name}}</p>
+  <p>Images:</p>
 
-<p>Images:</p>
+  <ul>
+    {{#each model.images as |image|}}
+      <li>
+        <img src={{image}} alt={{model.title}} width="300"/>
+      </li>
+    {{/each}}
+  </ul>
 
-<ul>
-
-  {{#each model.images as |image|}}
-    <img src={{image}} alt={{model.title}} width="300"/>
-  {{/each}}
-
-</ul>
+</div>

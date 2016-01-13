@@ -6,5 +6,17 @@ body {
 }
 
 a {
-	color: $secondary-color;
+  color: $secondary-color;
 }
+
+.header {
+  border-bottom: #eeeeee dashed 1px;
+}
+
+.content {
+  margin-top: 10px;
+
+  width: 300px;
+}
+
+
